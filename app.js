@@ -26,6 +26,6 @@ app.get("/index",function(req,res){
 
 
 
-app.listen(3000,function(){
-	console.log("Lets Make a Profile, for an old friend.".yellow)
-})
+app.listen(process.env.PORT || 3000 ,function(){
+    console.log("up and running on port "+process.env.PORT);
+});
