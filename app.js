@@ -13,7 +13,7 @@ app.use(express.static("public"));
 app.use(methodOverride("_method"));
 
 //Configure Mongoose
-mongoose.connect("mongodb://localhost:27017/carlos", { useNewUrlParser: true,useUnifiedTopology: true });
+//ongoose.connect("mongodb://localhost:27017/carlos", { useNewUrlParser: true,useUnifiedTopology: true });
 
 
 app.get("/",function(req,res){
